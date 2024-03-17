@@ -24,7 +24,7 @@ repositories {
 dependencies {
 
     // Detekt
-    detektPlugins("io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.5")
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.5")
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

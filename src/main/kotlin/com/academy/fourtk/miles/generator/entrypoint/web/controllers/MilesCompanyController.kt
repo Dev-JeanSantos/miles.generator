@@ -1,6 +1,7 @@
 package com.academy.fourtk.miles.generator.entrypoint.web.controllers
 
 import com.academy.fourtk.miles.generator.entrypoint.web.dtos.CompanyDTO
+import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.PostMapping
@@ -15,7 +16,11 @@ class MilesCompanyController() {
     private lateinit var logger: Logger
 
     @PostMapping
-    fun createCompany(@RequestBody request: CompanyDTO): ResponseEntity<String> {
+    fun createCompany(
+        @RequestBody
+        @Valid
+        request: CompanyDTO
+    ): ResponseEntity<String> {
         logger.info("starter create company")
         return ResponseEntity("Ola", HttpStatus.OK)
     }

@@ -195,7 +195,7 @@ exceptions:
 formatting:
   active: true
   android: false
-  autoCorrect: false
+  autoCorrect: true
   ChainWrapping:
     active: true
     autoCorrect: true
@@ -239,8 +239,8 @@ formatting:
     active: true
     autoCorrect: true
   NoSemicolons:
-    active: false
-    autoCorrect: false
+    active: true
+    autoCorrect: true
   NoTrailingSpaces:
     active: true
     autoCorrect: true
@@ -277,7 +277,6 @@ formatting:
   StringTemplate:
     active: true
     autoCorrect: true
-
 
 performance:
   active: true

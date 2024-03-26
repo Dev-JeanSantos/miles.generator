@@ -25,6 +25,15 @@ console-reports:
   #  - 'FindingsReport'
   #  - 'BuildFailureReport'
 
+output-reports:
+  active: true
+  exclude: []
+  #  - 'ProjectStatisticsReport'
+  #  - 'ComplexityReport'
+  #  - 'NotificationReport'
+  #  - 'FindingsReport'
+  #  - 'BuildFailureReport'
+
 comments:
   active: true
   CommentOverPrivateFunction:
@@ -186,7 +195,7 @@ exceptions:
 formatting:
   active: true
   android: false
-  autoCorrect: true
+  autoCorrect: false
   ChainWrapping:
     active: true
     autoCorrect: true
@@ -230,8 +239,8 @@ formatting:
     active: true
     autoCorrect: true
   NoSemicolons:
-    active: true
-    autoCorrect: true
+    active: false
+    autoCorrect: false
   NoTrailingSpaces:
     active: true
     autoCorrect: true
